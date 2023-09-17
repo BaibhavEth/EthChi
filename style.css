@@ -1,0 +1,86 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, button, input {
+  margin: 0;
+  padding: 0;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Make a background color */
+body {
+  background: #f0f0f0;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+}
+
+/* Content Box */
+.content-box {
+  background-color: #f9f9f9;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade when hovered */
+}
+
+/* Add some shadow to the button */
+button:active {
+  box-shadow: 0 4px #999;
+  transform: translateY(2px);
+}

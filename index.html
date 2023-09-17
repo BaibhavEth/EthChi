@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supply Chain Smart Contract</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.0/dist/web3.min.js"></script>
+</head>
+<body>
+  <div id="labDiv" style="display:none;">
+    <h2>Lab Operations</h2>
+    <form id="initializeProduct">
+      Product ID: <input type="text" id="productId"><br>
+      Expiry Date: <input type="text" id="expiryDate"><br>
+      Batch Number: <input type="text" id="batchNumber"><br>
+      <button type="submit">Initialize Product</button>
+    </form>
+  </div>
+
+  <div id="warehouseDiv" style="display:none;">
+    <h2>Warehouse Operations</h2>
+    <form id="moveProductWarehouse">
+      Batch Number: <input type="text" id="moveProductIdWarehouse"><br>
+      <button type="submit">Move to Next Stage</button>
+    </form>
+  </div>
+
+  <div id="pharmacyDiv" style="display:none;">
+    <h2>Pharmacy Operations</h2>
+    <form id="getProductConsumer">
+      Batch Number: <input type="text" id="getProductIdConsumer"><br>
+      <button type="submit">Get Product Details</button>
+    </form>
+    <h3>Product Details:</h3>
+    <pre id="productDetails"></pre>
+  </div>
+
+  <script src="script.js"></script> <!-- Moved all JS to a separate file -->
+</body>
+</html>
